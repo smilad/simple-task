@@ -21,7 +21,7 @@ def create_app(redis_client: Redis | None = None) -> FastAPI:
     @asynccontextmanager
     async def lifespan(_: FastAPI) -> AsyncIterator[None]:
         try:
-            client.ping()  # Fail at startup when persistence is unavailable.
+            await client.ping()  # Fail at startup when persistence is unavailable.
             yield
         finally:
             if owned_client:
