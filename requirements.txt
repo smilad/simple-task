@@ -1,2 +1,7 @@
 fastapi==0.141.1
 uvicorn[standard]==0.52.1
+SQLAlchemy>=2.0,<3.0
+PyMySQL>=1.1,<2.0
+python-dotenv>=1.0,<2.0
+redis>=5.0,<7.0
+celery[redis]>=5.5,<6.0
