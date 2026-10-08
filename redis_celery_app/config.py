@@ -1,4 +1,4 @@
-cr"""Settings shared by the API process and the Celery worker."""
+"""Settings shared by the API process and the Celery worker."""
 
 import os
 from dataclasses import dataclass
